@@ -1,0 +1,19 @@
+menu "Greenhouse Project Configuration"
+
+config DEFAULT_TEMP_SETPOINT
+    float "Temperatura de referência padrão"
+    default 28.0
+
+config DEFAULT_CONTROL_ENABLED
+    bool "Controle inicia habilitado"
+    default y
+
+config DEFAULT_LOGGING_ENABLED
+    bool "Log inicia habilitado"
+    default y
+
+config LOG_INTERVAL_MS
+    int "Intervalo de log em ms"
+    default 5000
+
+endmenu
